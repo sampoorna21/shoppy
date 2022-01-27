@@ -48,5 +48,9 @@
       "extends": ["plugin:@angular-eslint/template/recommended"],
       "rules": {}
     }
-  ]
+  ],
+  "env": {
+    "jasmine": true,
+    "node": true
+  }
 }
