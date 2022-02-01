@@ -12,9 +12,13 @@ import { MatIconModule} from '@angular/material/icon';
 
 import { MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BadgeComponent } from './badge/badge.component';
+
+import { BadgeDirective } from './badge.directive';
+
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CategoriesComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, CategoriesComponent, FooterComponent, BadgeComponent, BadgeDirective],
   imports: [BrowserModule, AppRoutingModule,MatBadgeModule,MatIconModule,MatButtonModule,BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
