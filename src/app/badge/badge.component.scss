@@ -45,6 +45,7 @@ section{
 
 .button2{
     margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
     outline: none;
   background-color: red;
@@ -61,6 +62,7 @@ section{
     
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 .app-badge {
     position: absolute;
     width: 30px;
@@ -73,6 +75,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 16px;
     
 }
+
+ span.app-badge.yellow{
+  background-color: yellow;
+}
+
+
 
 
 

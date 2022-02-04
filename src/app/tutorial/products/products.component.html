@@ -1,0 +1,9 @@
+<p>My products</p>
+<!-- <input type="text" [(ngModel)]="productName">
+<button (click)="productName='A Tree'" [disabled]="isDisabled">Change Name</button>
+<div>{{ productName}}</div> -->
+
+<input *ngIf="!isDisabled" type="text" [(ngModel)]="productName">
+<button *ngIf="!isDisabled" (click)="onAddProduct()" >Add Product</button>
+<!-- <div *ngFor="let product of products">{{ product}}</div> --> 
+<app-product (productClicked)="onRemoveProduct(product)" *ngFor="let product of products" [productName]="product"></app-product>  <!--Custom property binding-->

@@ -15,11 +15,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BadgeComponent } from './badge/badge.component';
 
 import { BadgeDirective } from './badge.directive';
-
+import { ProductsComponent } from './tutorial/products/products.component';
+ import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './tutorial/product/product.component';
+import { FormsComponent } from './tutorial/forms/forms.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CategoriesComponent, FooterComponent, BadgeComponent, BadgeDirective],
-  imports: [BrowserModule, AppRoutingModule,MatBadgeModule,MatIconModule,MatButtonModule,BrowserAnimationsModule],
+  declarations: [AppComponent, HeaderComponent, CategoriesComponent, FooterComponent, BadgeComponent, BadgeDirective, ProductsComponent, ProductComponent, FormsComponent],
+  imports: [BrowserModule, AppRoutingModule,MatBadgeModule,MatIconModule,MatButtonModule,BrowserAnimationsModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

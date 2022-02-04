@@ -1,0 +1,18 @@
+
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <p><label for="firstname">First Name </label>
+        <input type="text"  id="firstname" name="firstname" ngModel></p>
+
+    <p><label for="lastname">Last Name </label>
+    <input type="text"  id="lastname" name="lastname" ngModel></p>
+
+    <p><label for="email">Email </label>
+    <input type="text"  id="email" name="email" ngModel></p>
+
+    <p><label for="gender">Gender </label>
+    <input type="radio"  value="male" id="gender" name="gender" ngModel>
+    <input type="radio" value="female"  id="gender" name="gender" ngModel></p>
+
+
+    <p><button type="submit">Submit</button></p>
+</form>

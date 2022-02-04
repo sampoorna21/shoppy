@@ -10,7 +10,18 @@ import { Directive, ElementRef, Inject, Input, OnChanges, OnInit, Renderer2, Sim
 export class BadgeDirective implements OnInit, OnChanges {
 
   badgeElement: HTMLSpanElement | undefined
-  @Input()appBadge:string|number=0
+  @Input()appBadge:string|number=0;
+  @Input()badgeBackgroundColor:string | undefined="yellow";
+
+  /*@Input('appBadge')
+  get content(): string | number {
+    return this._content
+  }
+  set content(newContent: string | number) {
+    this.updateContent(newContent)
+  }
+  private _content: string | number = ''  */
+
   constructor(
     // to create a badge element (HTML ELEMENT - SPAN)
     private renderer: Renderer2,
@@ -42,4 +53,15 @@ export class BadgeDirective implements OnInit, OnChanges {
     }
   }
   
+
+
+
+
+/*updateContent(newContent: string | number) {
+  this._content = newContent
+  if (this.badgeElement) {
+    this.badgeElement.innerText = `${newContent}`
+  }
+}*/
+
 }

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BadgeComponent implements OnInit {
   count1=0;
   count2=30;
-  increment(){
+  count3=1;
+  increment(): void{
     this.count1++
     console.log(this.count1)
   }
@@ -16,6 +17,13 @@ export class BadgeComponent implements OnInit {
     this.count2--
     console.log(this.count2)
   }
+ multiply(){
+    this.count3=this.count3*5;
+    console.log(this.count3)
+  }
+
+
+
   constructor() { }
 
   ngOnInit(): void {
