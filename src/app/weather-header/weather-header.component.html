@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="tab">
+    <a href="#home" id="home" (click)="tabChange('home')" class="active">HOME</a>
+    <a href="#favourite" id="favouite" (click)="tabChange('favourite')">FAVOURITE</a>
+    <a href="#recentsearch" id="recentsearch" (click)="tabChange('recentsearch')">RECENT SEARCH</a>
+    <a class="date">{{ date | date: 'medium' }}</a>
+  </div>
+
+  <div class="content">
+    <div class="content-home" *ngIf="id === 'home'">
+      <p>Home</p>
+    </div>
+    <div class="content-favourite" *ngIf="id === 'favourite'">
+      <p>Favourite</p>
+    </div>
+    <div class="content-recentsearch" *ngIf="id === 'recentsearch'">
+      <p>Recent Search</p>
+    </div>
+  </div>  
+</div>
+ 
+
